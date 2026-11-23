@@ -1,0 +1,463 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+
+}
+
+/* Navbar */
+.navbar {
+    height: 65px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 25px;
+    background-color: white;
+    border-bottom: 1px solid #eeeeee;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+
+.logo {
+    font-size: 27px;
+    font-weight: bold;
+    color: #7d2ae8;
+}
+
+.nav-links {
+    display: flex;
+    gap: 25px;
+    align-items: center;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333333;
+    font-size: 14px;
+}
+
+.profile {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: #7d2ae8;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.sidebar {
+    width: 220px;
+    height: calc(100vh - 65px);
+    position: fixed;
+    top: 65px;
+    left: 0;
+    background-color: #ffffff;
+    padding: 25px 15px;
+    border-right: 1px solid #eeeeee;
+}
+
+.sidebar ul {
+    list-style: none;
+}
+
+.sidebar li {
+    padding: 13px 12px;
+    margin-bottom: 8px;
+    border-radius: 8px;
+    font-size: 15px;
+    color: #333333;
+}
+
+.sidebar li:first-child {
+    background-color: #f0e8ff;
+    color: #7d2ae8;
+    font-weight: bold;
+}
+
+
+/* Main content */
+
+.main-content {
+    margin-left: 220px;
+    margin-top: 65px;
+    padding: 30px;
+}
+
+/* Welcome section */
+
+.welcome-section {
+    height: 280px;
+    width: 100%;
+    background: linear-gradient(
+        120deg,
+        #8e44ec,
+        #5c6be8,
+        #00a6c7
+    );
+    border-radius: 15px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    color: white;
+    gap: 18px;
+}
+
+.welcome-section h1 {
+    font-size: 32px;
+}
+
+.welcome-section p {
+    font-size: 16px;
+}
+
+/* Search box */
+
+.search-box {
+    width: 65%;
+    height: 50px;
+    background-color: white;
+    border-radius: 8px;
+
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+    gap: 12px;
+}
+
+.search-box input {
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    font-size: 15px;
+}
+
+
+/* Create Design Section */
+
+.create-section {
+    margin-top: 35px;
+}
+
+.create-section h2 {
+    font-size: 22px;
+    color: #333333;
+    margin-bottom: 25px;
+}
+
+.design-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.design-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    cursor: pointer;
+}
+
+.design-icon {
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 28px;
+    font-weight: bold;
+    color: white;
+}
+
+.presentation {
+    background-color: #8e44ec;
+}
+
+.social {
+    background-color: #e85b91;
+}
+
+.video {
+    background-color: #2875db;
+}
+
+.document {
+    background-color: #16a085;
+}
+
+.whiteboard {
+    background-color: #e6a23c;
+}
+
+.custom {
+    background-color: #555555;
+}
+
+.design-item p {
+    font-size: 14px;
+    color: #333333;
+    text-align: center;
+}
+
+
+/* Recommended Templates */
+
+.templates-section {
+    margin-top: 45px;
+}
+
+.templates-section h2 {
+    font-size: 22px;
+    color: #333333;
+    margin-bottom: 25px;
+}
+
+.template-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.template-card {
+    background-color: white;
+    border: 1px solid #eeeeee;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.template-card img {
+    width: 100%;
+    height: 160px;
+}
+
+.template-card h3 {
+    font-size: 16px;
+    margin: 12px;
+    color: #333333;
+}
+
+.template-card p {
+    font-size: 13px;
+    color: #777777;
+    margin: 0 12px 15px;
+}
+
+
+/* Recent Designs */
+
+.recent-section {
+    margin-top: 45px;
+    margin-bottom: 40px;
+}
+
+.recent-section h2 {
+    font-size: 22px;
+    color: #333333;
+    margin-bottom: 25px;
+}
+
+.recent-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.recent-card {
+    border: 1px solid #eeeeee;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: white;
+}
+
+.recent-card img {
+    width: 100%;
+    height: 150px;
+}
+
+.recent-details {
+    padding: 12px;
+}
+
+.recent-details h3 {
+    font-size: 15px;
+    color: #333333;
+    margin-bottom: 8px;
+}
+
+.recent-details p {
+    font-size: 12px;
+    color: #888888;
+}
+
+.template-card img,
+.recent-card img {
+    display: block;
+}
+
+.template-card,
+.recent-card {
+    cursor: pointer;
+}
+
+.main-content {
+    min-height: 100vh;
+}
+
+
+
+
+/* Tablet Devices */
+
+@media screen and (max-width: 768px) {
+
+    /* Hide sidebar */
+    .sidebar {
+        display: none;
+    }
+
+    /* Main content */
+    .main-content {
+        margin-left: 0;
+        padding: 20px;
+    }
+
+    /* Navbar */
+    .nav-links {
+        gap: 12px;
+    }
+
+    /* Welcome section */
+    .welcome-section h1 {
+        font-size: 26px;
+    }
+
+    .search-box {
+        width: 85%;
+    }
+
+    /* Design shortcuts */
+    .design-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 25px;
+    }
+
+    /* Template cards */
+    .template-container,
+    .recent-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+/* Mobile Devices */
+
+@media screen and (max-width: 480px) {
+
+    /* Navbar */
+    .navbar {
+        height: 60px;
+        padding: 0 15px;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    /* Main content */
+    .main-content {
+        margin-left: 0;
+        margin-top: 60px;
+        padding: 15px;
+    }
+
+    /* Welcome section */
+    .welcome-section {
+        height: 220px;
+        padding: 15px;
+        text-align: center;
+    }
+
+    .welcome-section h1 {
+        font-size: 22px;
+    }
+
+    .welcome-section p {
+        font-size: 13px;
+    }
+
+    .search-box {
+        width: 100%;
+        height: 45px;
+    }
+
+    .search-box input {
+        font-size: 12px;
+    }
+
+    /* Create a design */
+    .create-section h2,
+    .templates-section h2,
+    .recent-section h2 {
+        font-size: 19px;
+    }
+
+    .design-container {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px 10px;
+    }
+
+    .design-icon {
+        width: 55px;
+        height: 55px;
+        font-size: 22px;
+    }
+
+    .design-item p {
+        font-size: 11px;
+    }
+
+    /* Templates and recent designs */
+    .template-container,
+    .recent-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+    }
+
+    .template-card img,
+    .recent-card img {
+        height: 110px;
+    }
+
+    .template-card h3,
+    .recent-card h3 {
+        font-size: 12px;
+    }
+
+    .template-card p,
+    .recent-card p {
+        font-size: 10px;
+    }
+
+}
